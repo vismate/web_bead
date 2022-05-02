@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programozz - Rendezőalgoritmusok</title>
+
+    <!-- Bootsrap css hozzáadása CDN-ről -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <h1>Rendezőalgoritmusok</h1>
+
+    <section id="algorithms"></section>
+
+    <article>
+        <h2>Kiválasztó rendezés</h2>
+        <p>Kiválasztjuk az elejéről kezdve a sorozat egyes elemeit, majd egyenként összehasonlítjuk a sorozat még nem
+            rendezett többi elemével. Ha a sorrend nem megfelelő, akkor cserélünk. </p>
+        <p>Az algoritmus k-adik lépése előtt az első k-1 elem már rendezett, tehát ezek már nem vesznek részt a
+            vizsgálatokban. A kiválasztó rendezés lépésszáma legrosszabb és átlagos esetben is négyzetes. </p>
+        <img src="images/selection_sort.jpg" alt="alternatetext">
+    </article>
+
+    <article>
+        <h2>Beillesztő rendezés</h2>
+        <p>Az algoritmus k-adik lépése előtt az első k-1 elem már rendezett; a lépés során a k-adik elemet beszúrjuk az
+            első k-1 elem közé az őt nagyság szerint megillető helyre, és a nála nagyobbakat eggyel eltoljuk. </p>
+        <p>A beillesztő rendezés lépésszáma legrosszabb és átlagos esetben is négyzetes, így nagy tömbök esetén nem
+            hatékony. Nagyon kis tömbökre azonban ez a leggyorsabb algoritmus. </p>
+        <img src="images/insertion_sort.jpg" alt="alternatetext">
+    </article>
+
+    <article>
+        <h2>Összefésülő rendezés</h2>
+        <p>Az összefésülő rendezés alapötlete, hogy eleve rendezett elemsorozatok aránylag egyszerűen vonhatók össze
+            rendezett sorozattá. Az algoritmus lényege, hogy az elemeket két csoportba osztjuk, a csoportokat rendezzük
+            (akár összefésülő rendezéssel), majd a kapott részeket összefésüljük. </p>
+        <p>Az összefésülés lényege, hogy a bemeneti sorozatok aktuális elemét nézve a kimeneti sorozatba mindig a kisebb
+            kerül. Így egy összefésülés futásideje a kimeneti sorozat hosszával arányos. </p>
+        <img src="images/merge_sort.jpg" alt="alternatetext">
+    </article>
+
+    <article>
+        <h2>Gyorsrendezés</h2>
+        <p>A gyorsrendezés oszd meg és uralkodj elven működik: a rendezendő számok listáját két részre bontja, majd
+            ezeket a részeket rekurzívan, gyorsrendezéssel rendezi. A felbontáshoz kiválaszt egy támpontnak nevezett
+            elemet (más néven pivot, főelem vagy vezérelem), és particionálja a listát: a támpontnál kisebb elemeket
+            eléje, a nagyobbakat mögéje mozgatja. </p>
+        <img src="images/quick_sort.jpg" alt="alternatetext">
+    </article>
+
+    <section id="comparison"></section>
+    <h2>Összehasonlítás</h2>
+
+    <table>
+
+        <tr>
+            <th> </th>
+            <th>Kiválasztó rendezés</th>
+            <th>Beillesztő rendezés</th>
+            <th>Összefésülő rendezés</th>
+            <th>Gyorsrendezés</th>
+        </tr>
+        <tr>
+            <th>Műveletigény</th>
+            <td>&Theta;(n&sup2;)</td>
+            <td>&Theta;(n&sup2;)</td>
+            <td>&Theta;(n&middot;log n)</td>
+            <td>&Theta;(n&middot;log n)</td>
+        </tr>
+        <tr>
+            <th>Memóriaigény</th>
+            <td>&Theta;(1)</td>
+            <td>&Theta;(1)</td>
+            <td>&Theta;(n)</td>
+            <td>&Theta;(log n)</td>
+        </tr>
+        <tr>
+            <th>Stabilitás</th>
+            <td>Instabil</td>
+            <td>Stabil</td>
+            <td>Stabil</td>
+            <td>Instabil</td>
+        </tr>
+        <details>
+            <summary>Összehasonlító táblázat</summary>
+            <p>A bemutatott algoritmusok összehasonlítása műveletigény, memóriaigény és stabilitás szerint.</p>
+        </details>
+    </table>
+
+    <video width="320" height="240" controls>
+        <source src="videos/sorting.mp4" type="video/mp4">
+        A böngésző nem támogatja a video tag-et!
+    </video>
+
+
+    <!-- Bootsrap js hozzáadása CDN-ről -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
