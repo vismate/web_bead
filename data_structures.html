@@ -5,20 +5,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programozz - Absztrakt adatstruktúrák</title>
-    
+
     <!-- Bootsrap css hozzáadása CDN-ről -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="icon" href="images/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" title="normal">
+
+    <title>Programozz - Absztrakt adatstruktúrák</title>
+    <nav id="menu">
+        <ul>
+            <li><a href="index.html" title="Kezdőlap: kezdő információ">Kezdőlap</a></li>
+            <li><a href="sorting.html"
+                    title="Rendezőalgoritmusok bemutatása, szemléltzetése és összehasonlítása">Rendezőalgoritmusok</a>
+            </li>
+            <li><a class="active" href="data_structures.html"
+                    title="Absztrakt adatstruktúrák bemutása és szemléltetése">Absztrakt
+                    adatstruktúrák</a></li>
+            <li><a href="form.html" title="Visszajelzés küldése. Javaslat vagy hiba bejelentés."></span>Visszajelzés</a>
+            </li>
+        </ul>
+    </nav>
 </head>
 
 <body>
 
+    <header>
+        <h1>Absztrakt adatstruktúrák</h1>
+    </header>
 
-    <!-- Bootsrap js hozzáadása CDN-ről -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+    <main>
+        <article>
+            <h2>Verem</h2>
+            <p>A verem egy LIFO adatszerkezet, amelyben általában véges számú azonos típusú adatot lehet tárolni. </p>
+            <p>Hagyományosan két alapműveletet értelmezünk rá: </p>
+            <ul>
+                <li>push (rárak)</li>
+                <li>pop (levesz)</li>
+            </ul>
+            <p>A verem szokásos megvalósítása egy véges méretű összefüggő memóriaterület és egy veremmutató segítségével
+                történik. A memóriaterületet egyik vége felől töltjük föl, és a veremmutató mindig a legfölső elemre
+                mutat.
+            </p>
+            <img src="images/stack.jpg" alt="alternatetext">
+        </article>
+
+        <article>
+            <h2>Sor</h2>
+            <p>A sor egy FIFO működési elvű adatszerkezet. A besorolt elemek mindig a sor végére kerülnek. Elemet
+                kivenni
+                kizárólag a sor elejéről lehet. Jellemző felhasználási módja a sorszámhúzó automata, vagy a gyorsabb és
+                lassabb rendszerek közötti puffer, például a billentyűzetpuffer vagy a nyomtatási sor. Elosztott
+                rendszerek
+                közötti adatközlés segítésére is szolgálhat, illetve ha az adatokhoz azonos programból egyszerre több
+                szálnak kell hozzáférnie. </p>
+            <img src="images/queue.jpg" alt="alternatetext">
+        </article>
+
+        <article>
+            <h2>Hash tábla</h2>
+            <p>A hash tábla egy olyan adatszerkezet, amely egy hasítófüggvény segítségével állapítja meg, hogy melyik
+                kulcshoz milyen érték tartozik - így implementál egy asszociatív tömböt. A hasítófüggvény segítségével a
+                kulcsot leképezzük az adatokat tároló tömb egy adott indexére, ahol a keresett érték fellelhető. </p>
+            <p>Ideális esetben minden értelmezett kulcsra egyedi hash-t állít elő a hasítófüggvény, de ez a gyakorlatban
+                ritkán megvalósítható - így számolnunk kell azzal, hogy két különböző kulcsra ugyanazt a hash-t kapjuk,
+                és
+                kezelnünk kell az ilyenkor fellépő hash ütközést.</p>
+            <img src="images/hash_table.jpg" alt="alternatetext">
+        </article>
+
+        <article>
+            <h2>AVL fa</h2>
+            <p>A számítógép-tudományban az AVL-fa alatt egy ön-kiegyensúlyozó bináris keresőfát értünk. Egy AVL-fában
+                bármely csúcspont két részfájának magassága közti különbség legfeljebb egy. A keresés, beillesztés és
+                törlés
+                egyaránt O(log n) nagyságrendű időt vesz igénybe, még a legrosszabb esetben is.
+            </p>
+            <p>Minden csúcsnak van egy ún. egyensúly-faktora, amit megkapunk, ha kivonjuk a bal részfa magasságát a jobb
+                részfáéból. Egy csúcs kiegyensúlyozott, ha ez az érték 1, 0 vagy -1. Minden más esetben a csúcs
+                kiegyensúlyozatlan és forgatásokat igényel. </p>
+            <img src="images/avl_tree.png" alt="alternatetext">
+        </article>
+    </main>
+
+    <footer>
+
+
+        <!-- Bootsrap js hozzáadása CDN-ről -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+    </footer>
 </body>
 
 </html>

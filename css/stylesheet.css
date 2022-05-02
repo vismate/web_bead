@@ -1,0 +1,43 @@
+/*Közös stylesheet*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #02222b ;
+    margin-bottom: 100px;
+    color: #01151b;
+}
+
+h1,
+h2 {
+    text-shadow: 2px 2px 2px #ccc;
+    font-variant: small-caps;
+}
+
+h1 {
+    color:#022b38
+}
+
+h2 {
+    color: #056e8e;
+}
+
+p {
+    text-align: justify;
+}
+
+header,
+footer,
+main {
+    background-color: #e5f8fe;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 10px;
+}
+
+header {
+    border-radius: 10px 10px 0 0;
+}
+
+footer {
+    border-radius: 0 0 10px 10px;
+}
