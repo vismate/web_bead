@@ -13,9 +13,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
     <link rel="icon" href="images/logo.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css" title="normal">
+    <link rel="alternate stylesheet" type="text/css" href="css/larger_letters.css" title="larger_letters">
+
+    <script type="text/javascript" src="js/setStylesheet.js"></script>
 
 
-    <title>Programozz - Kezdőlap</title>
     <nav class="navbar navbar-expand-lg navbar-dark" id="menu">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img class="d-inline-block" src="images/logo.png" width="64" height="64"
@@ -42,11 +44,19 @@
         </div>
 
     </nav>
+
+    <title>Programozz - Kezdőlap</title>
+
 </head>
 
 <body>
 
     <header>
+        <nav id="styleswitcher">
+            <a id="larger_letters" href="#" onclick="setStylesheet('larger_letters'); return false;">A+</a>
+            <a id="normal_stylesheet" href="#" onclick="setStylesheet('normal'); return false;">A-</a>
+        </nav>
+
         <h1> Kezdőlap </h1>
     </header>
 
