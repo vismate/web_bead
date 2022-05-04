@@ -1,0 +1,13 @@
+@import url('stylesheet.css');
+
+body {
+    font-size: 1.5em;
+}
+
+
+header,
+main,
+footer {
+    width: 95%;
+    max-width: 1200px;
+}
