@@ -68,7 +68,10 @@ caption {
     background-image: url('https://www.bittbox.com/wp-content/uploads/2011/09/noise_pattern_1.jpg');
     background-size: contain;
     border-radius: 25px;
-    box-shadow:         3px 3px 3px rgb(30,30,32);
+    box-shadow: 4px 4px 4px rgb(30, 30, 32);
+    border-color: #2899f5;
+    border-style: solid;
+    border-width: 1px;
 }
 
 .navbar-brand,
