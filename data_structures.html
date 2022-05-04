@@ -37,57 +37,106 @@
     </header>
 
     <main>
-        <article>
-            <h2>Verem</h2>
-            <p>A verem egy LIFO adatszerkezet, amelyben általában véges számú azonos típusú adatot lehet tárolni. </p>
-            <p>Hagyományosan két alapműveletet értelmezünk rá: </p>
-            <ul>
-                <li>push (rárak)</li>
-                <li>pop (levesz)</li>
-            </ul>
-            <p>A verem szokásos megvalósítása egy véges méretű összefüggő memóriaterület és egy veremmutató segítségével
-                történik. A memóriaterületet egyik vége felől töltjük föl, és a veremmutató mindig a legfölső elemre
-                mutat.
-            </p>
-            <img src="images/stack.jpg" alt="alternatetext">
-        </article>
+        <div class="container">
+            <div class="row">
 
-        <article>
-            <h2>Sor</h2>
-            <p>A sor egy FIFO működési elvű adatszerkezet. A besorolt elemek mindig a sor végére kerülnek. Elemet
-                kivenni
-                kizárólag a sor elejéről lehet. Jellemző felhasználási módja a sorszámhúzó automata, vagy a gyorsabb és
-                lassabb rendszerek közötti puffer, például a billentyűzetpuffer vagy a nyomtatási sor. Elosztott
-                rendszerek
-                közötti adatközlés segítésére is szolgálhat, illetve ha az adatokhoz azonos programból egyszerre több
-                szálnak kell hozzáférnie. </p>
-            <img src="images/queue.jpg" alt="alternatetext">
-        </article>
+                <div class="col-sm-12 col-md-6 col-xxl-3">
+                    <h2>Verem</h2>
+                    <p>A verem egy LIFO adatszerkezet, amelyben általában véges számú azonos típusú adatot lehet
+                        tárolni.
+                    </p>
+                    <p>Hagyományosan két alapműveletet értelmezünk rá: </p>
+                    <ul>
+                        <li>push (rárak)</li>
+                        <li>pop (levesz)</li>
+                    </ul>
+                    <p>A verem szokásos megvalósítása egy véges méretű összefüggő memóriaterület és egy veremmutató
+                        segítségével
+                        történik. A memóriaterületet egyik vége felől töltjük föl, és a veremmutató mindig a
+                        legfölső
+                        elemre
+                        mutat.
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-xxl-3 d-flex align-items-center">
+                    <figure>
+                        <img src="images/stack.jpg" alt="alternatetext" class="img-fluid rounded">
+                        <figcaption>Stack vizualizáció</figcaption>
+                    </figure>
+                </div>
 
-        <article>
-            <h2>Hash tábla</h2>
-            <p>A hash tábla egy olyan adatszerkezet, amely egy hasítófüggvény segítségével állapítja meg, hogy melyik
-                kulcshoz milyen érték tartozik - így implementál egy asszociatív tömböt. A hasítófüggvény segítségével a
-                kulcsot leképezzük az adatokat tároló tömb egy adott indexére, ahol a keresett érték fellelhető. </p>
-            <p>Ideális esetben minden értelmezett kulcsra egyedi hash-t állít elő a hasítófüggvény, de ez a gyakorlatban
-                ritkán megvalósítható - így számolnunk kell azzal, hogy két különböző kulcsra ugyanazt a hash-t kapjuk,
-                és
-                kezelnünk kell az ilyenkor fellépő hash ütközést.</p>
-            <img src="images/hash_table.jpg" alt="alternatetext">
-        </article>
 
-        <article>
-            <h2>AVL fa</h2>
-            <p>A számítógép-tudományban az AVL-fa alatt egy ön-kiegyensúlyozó bináris keresőfát értünk. Egy AVL-fában
-                bármely csúcspont két részfájának magassága közti különbség legfeljebb egy. A keresés, beillesztés és
-                törlés
-                egyaránt O(log n) nagyságrendű időt vesz igénybe, még a legrosszabb esetben is.
-            </p>
-            <p>Minden csúcsnak van egy ún. egyensúly-faktora, amit megkapunk, ha kivonjuk a bal részfa magasságát a jobb
-                részfáéból. Egy csúcs kiegyensúlyozott, ha ez az érték 1, 0 vagy -1. Minden más esetben a csúcs
-                kiegyensúlyozatlan és forgatásokat igényel. </p>
-            <img src="images/avl_tree.png" alt="alternatetext">
-        </article>
+                <div class="col-sm-12 col-md-6 col-xxl-3">
+                    <h2>Sor</h2>
+                    <p>A sor egy FIFO működési elvű adatszerkezet. A besorolt elemek mindig a sor végére kerülnek.
+                        Elemet
+                        kivenni
+                        kizárólag a sor elejéről lehet. Jellemző felhasználási módja a sorszámhúzó automata, vagy a
+                        gyorsabb
+                        és
+                        lassabb rendszerek közötti puffer, például a billentyűzetpuffer vagy a nyomtatási sor.
+                        Elosztott
+                        rendszerek
+                        közötti adatközlés segítésére is szolgálhat, illetve ha az adatokhoz azonos programból
+                        egyszerre
+                        több
+                        szálnak kell hozzáférnie. </p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-xxl-3 d-flex align-items-center">
+                    <img src="images/queue.jpg" alt="alternatetext" class="img-fluid rounded">
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-12 col-md-6 col-xxl-3">
+                    <h2>Hash tábla</h2>
+                    <p>A hash tábla egy olyan adatszerkezet, amely egy hasítófüggvény segítségével állapítja meg,
+                        hogy
+                        melyik
+                        kulcshoz milyen érték tartozik - így implementál egy asszociatív tömböt. A hasítófüggvény
+                        segítségével a
+                        kulcsot leképezzük az adatokat tároló tömb egy adott indexére, ahol a keresett érték
+                        fellelhető.
+                    </p>
+                    <p>Ideális esetben minden értelmezett kulcsra egyedi hash-t állít elő a hasítófüggvény, de ez a
+                        gyakorlatban
+                        ritkán megvalósítható - így számolnunk kell azzal, hogy két különböző kulcsra ugyanazt a
+                        hash-t
+                        kapjuk,
+                        és
+                        kezelnünk kell az ilyenkor fellépő hash ütközést.</p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-xxl-3 d-flex align-items-center">
+                    <img src="images/hash_table.jpg" alt="alternatetext" class="img-fluid rounded">
+                </div>
+
+
+
+                <div class="col-sm-12 col-md-6 col-xxl-3">
+                    <h2>AVL fa</h2>
+                    <p>A számítógép-tudományban az AVL-fa alatt egy ön-kiegyensúlyozó bináris keresőfát értünk. Egy
+                        AVL-fában
+                        bármely csúcspont két részfájának magassága közti különbség legfeljebb egy. A keresés,
+                        beillesztés
+                        és
+                        törlés
+                        egyaránt O(log n) nagyságrendű időt vesz igénybe, még a legrosszabb esetben is.
+                    </p>
+                    <p>Minden csúcsnak van egy ún. egyensúly-faktora, amit megkapunk, ha kivonjuk a bal részfa
+                        magasságát a
+                        jobb
+                        részfáéból. Egy csúcs kiegyensúlyozott, ha ez az érték 1, 0 vagy -1. Minden más esetben a
+                        csúcs
+                        kiegyensúlyozatlan és forgatásokat igényel. </p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-xxl-3 d-flex align-items-center">
+                    <img src="images/avl_tree.png" alt="alternatetext" class="img-fluid rounded">
+                </div>
+
+            </div>
+        </div>
     </main>
 
     <footer>
