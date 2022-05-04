@@ -11,22 +11,36 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/logo.jpg" type="image/x-icon">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css" title="normal">
 
 
     <title>Programozz - Kezdőlap</title>
-    <nav id="menu">
-        <ul>
-            <li><a class="active" , href="index.html" title="Kezdőlap: kezdő információ">Kezdőlap</a></li>
-            <li><a href="sorting.html"
-                    title="Rendezőalgoritmusok bemutatása, szemléltzetése és összehasonlítása">Rendezőalgoritmusok</a>
-            </li>
-            <li><a href="data_structures.html" title="Absztrakt adatstruktúrák bemutása és szemléltetése">Absztrakt
-                    adatstruktúrák</a></li>
-            <li><a href="form.html" title="Visszajelzés küldése. Javaslat vagy hiba bejelentés."></span>Visszajelzés</a>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark" id="menu">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="d-inline-block" src="images/logo.png" width="64" height="64"
+                    alt="logo">Programozz</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#"
+                            title="Kezdőlap: kezdő információ">Kezdőlap</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sorting.html"
+                            title="Rendezőalgoritmusok bemutatása, szemléltzetése és összehasonlítása">Rendezőalgoritmusok</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="data_structures.html"
+                            title="Absztrakt adatstruktúrák bemutása és szemléltetése">Absztrakt
+                            adatstruktúrák</a></li>
+                    <li class="nav-item"><a class="nav-link" href="form.html"
+                            title="Visszajelzés küldése. Javaslat vagy hiba bejelentés."></span>Visszajelzés</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
     </nav>
 </head>
 
@@ -37,7 +51,8 @@
     </header>
 
     <main>
-        <div class="container">
+
+        <article class="container">
 
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-3">
@@ -47,7 +62,8 @@
                 </div>
 
                 <div class="col-sm-12 col-md-6 col-lg-3">
-                    <p>Akár egyetemen tanulsz programozni, akár képzésre jársz, akár otthon tanulsz, kiegészítő anyagok
+                    <p>Akár egyetemen tanulsz programozni, akár képzésre jársz, akár otthon tanulsz, kiegészítő
+                        anyagok
                         mindig
                         jól
                         jönnek. Ha egy adott területről több forrásból gyűjtesz információt, az segít megérteni az
@@ -56,14 +72,15 @@
                 </div>
 
                 <div class="col-sm-12 col-md-12 col-lg-6">
-                    <img src="images/cover.jpg" alt="alternatetext" class="img-fluid">
+                    <img src="images/cover.jpg" alt="Kód egy kijelzőn" class="img-fluid rounded">
                 </div>
 
 
             </div>
 
 
-        </div>
+        </article>
+
     </main>
 
     <footer></footer>

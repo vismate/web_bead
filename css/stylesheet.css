@@ -34,9 +34,9 @@ main {
     border-style: solid;
     border-width: 1px;
     border-color: rgb(212, 212, 212);
-    margin-left: 1%;
-    margin-right: 1%;
-    padding: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 2%;
 }
 
 main {
@@ -57,4 +57,17 @@ footer {
 figcaption {
     text-align: center;
     font-style: italic;
+}
+
+.navbar{
+    margin: 0.5em;
+}
+
+.navbar-brand,
+.nav-link {
+    color: white;
+}
+
+.nav-link.active {
+    color: #2899f5 !important;
 }

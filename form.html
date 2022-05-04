@@ -11,22 +11,33 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/logo.jpg" type="image/x-icon">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css" title="normal">
 
     <title>Programozz - Visszajelzés</title>
-    <nav id="menu">
-        <ul>
-            <li><a href="index.html" title="Kezdőlap: kezdő információ">Kezdőlap</a></li>
-            <li><a href="sorting.html"
-                    title="Rendezőalgoritmusok bemutatása, szemléltzetése és összehasonlítása">Rendezőalgoritmusok</a>
-            </li>
-            <li><a href="data_structures.html" title="Absztrakt adatstruktúrák bemutása és szemléltetése">Absztrakt
-                    adatstruktúrák</a></li>
-            <li><a class="active" href="form.html"
-                    title="Visszajelzés küldése. Javaslat vagy hiba bejelentés."></span>Visszajelzés</a>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark" id="menu">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img class="d-inline-block" src="images/logo.png" width="64" height="64"
+                alt="logo">Programozz</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html" title="Kezdőlap: kezdő információ">Kezdőlap</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sorting.html"
+                            title="Rendezőalgoritmusok bemutatása, szemléltzetése és összehasonlítása">Rendezőalgoritmusok</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="data_structures.html" title="Absztrakt adatstruktúrák bemutása és szemléltetése">Absztrakt
+                            adatstruktúrák</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="form.html" aria-current="page"  title="Visszajelzés küldése. Javaslat vagy hiba bejelentés."></span>Visszajelzés</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
     </nav>
 </head>
 

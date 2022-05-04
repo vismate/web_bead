@@ -11,22 +11,35 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/logo.jpg" type="image/x-icon">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css" title="normal">
 
     <title>Programozz - Absztrakt adatstruktúrák</title>
-    <nav id="menu">
-        <ul>
-            <li><a href="index.html" title="Kezdőlap: kezdő információ">Kezdőlap</a></li>
-            <li><a href="sorting.html"
-                    title="Rendezőalgoritmusok bemutatása, szemléltzetése és összehasonlítása">Rendezőalgoritmusok</a>
-            </li>
-            <li><a class="active" href="data_structures.html"
-                    title="Absztrakt adatstruktúrák bemutása és szemléltetése">Absztrakt
-                    adatstruktúrák</a></li>
-            <li><a href="form.html" title="Visszajelzés küldése. Javaslat vagy hiba bejelentés."></span>Visszajelzés</a>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark" id="menu">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img class="d-inline-block" src="images/logo.png" width="64"
+                    height="64" alt="logo">Programozz</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html"
+                            title="Kezdőlap: kezdő információ">Kezdőlap</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sorting.html"
+                            title="Rendezőalgoritmusok bemutatása, szemléltzetése és összehasonlítása">Rendezőalgoritmusok</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="data_structures.html"
+                            title="Absztrakt adatstruktúrák bemutása és szemléltetése">Absztrakt
+                            adatstruktúrák</a></li>
+                    <li class="nav-item"><a class="nav-link" href="form.html"
+                            title="Visszajelzés küldése. Javaslat vagy hiba bejelentés."></span>Visszajelzés</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
     </nav>
 </head>
 
@@ -37,10 +50,10 @@
     </header>
 
     <main>
-        <div class="container">
-            <div class="row">
+        <section class="container">
+            <article class="row">
 
-                <div class="col-sm-12 col-md-6 col-xxl-3">
+                <div class="col-sm-12 col-md-6">
                     <h2>Verem</h2>
                     <p>A verem egy LIFO adatszerkezet, amelyben általában véges számú azonos típusú adatot lehet
                         tárolni.
@@ -58,15 +71,18 @@
                         mutat.
                     </p>
                 </div>
-                <div class="col-sm-12 col-md-6 col-xxl-3 d-flex align-items-center">
+                <div class="col-sm-12 col-md-6 d-flex align-items-center">
                     <figure>
-                        <img src="images/stack.jpg" alt="alternatetext" class="img-fluid rounded">
-                        <figcaption>Stack vizualizáció</figcaption>
+                        <img src="images/stack.jpg"
+                            alt="Verem vizualizáció. Egy tömb részlegesen megtöltve értékekkel és egy mutató, amely a verem tetejére mutat."
+                            class="img-fluid rounded">
+                        <figcaption>Verem vizualizáció</figcaption>
                     </figure>
                 </div>
+            </article>
 
-
-                <div class="col-sm-12 col-md-6 col-xxl-3">
+            <article class="row">
+                <div class="col-sm-12 col-md-6">
                     <h2>Sor</h2>
                     <p>A sor egy FIFO működési elvű adatszerkezet. A besorolt elemek mindig a sor végére kerülnek.
                         Elemet
@@ -82,15 +98,20 @@
                         több
                         szálnak kell hozzáférnie. </p>
                 </div>
-                <div class="col-sm-12 col-md-6 col-xxl-3 d-flex align-items-center">
-                    <img src="images/queue.jpg" alt="alternatetext" class="img-fluid rounded">
+                <div class="col-sm-12 col-md-6 d-flex align-items-center">
+                    <figure>
+                        <img src="images/queue.jpg"
+                            alt="Sor vizualizáció. Egy tömb részlegesen megtöltve értékekkel és két mutató (front, rear), amelyek a verem elejére illetve hátuljára mutatnak."
+                            class="img-fluid rounded">
+                        <figcaption>Sor vizualizáció</figcaption>
+                    </figure>
                 </div>
 
-            </div>
+            </article>
 
-            <div class="row">
+            <article class="row">
 
-                <div class="col-sm-12 col-md-6 col-xxl-3">
+                <div class="col-sm-12 col-md-6">
                     <h2>Hash tábla</h2>
                     <p>A hash tábla egy olyan adatszerkezet, amely egy hasítófüggvény segítségével állapítja meg,
                         hogy
@@ -108,13 +129,18 @@
                         és
                         kezelnünk kell az ilyenkor fellépő hash ütközést.</p>
                 </div>
-                <div class="col-sm-12 col-md-6 col-xxl-3 d-flex align-items-center">
-                    <img src="images/hash_table.jpg" alt="alternatetext" class="img-fluid rounded">
+                <div class="col-sm-12 col-md-6 d-flex align-items-center">
+                    <figure>
+                        <img src="images/hash_table.jpg"
+                            alt="Verem vizualizáció. Egy tömb megtöltve értékekkel és az értékek mellet szöveges kulcsok."
+                            class="img-fluid rounded">
+                        <figcaption>Hash tábla vizualizáció</figcaption>
+                    </figure>
                 </div>
 
-
-
-                <div class="col-sm-12 col-md-6 col-xxl-3">
+            </article>
+            <article class="row">
+                <div class="col-sm-12 col-md-6">
                     <h2>AVL fa</h2>
                     <p>A számítógép-tudományban az AVL-fa alatt egy ön-kiegyensúlyozó bináris keresőfát értünk. Egy
                         AVL-fában
@@ -131,12 +157,18 @@
                         csúcs
                         kiegyensúlyozatlan és forgatásokat igényel. </p>
                 </div>
-                <div class="col-sm-12 col-md-6 col-xxl-3 d-flex align-items-center">
-                    <img src="images/avl_tree.png" alt="alternatetext" class="img-fluid rounded">
+                <div class="col-sm-12 col-md-6 d-flex align-items-center">
+                    <figure>
+                        <img src="images/avl_tree.png"
+                            alt="AVL fa vizualizáció. Egy bináris fa struktúra, ahol minden nódus bal gyermeke kisebb, jobb oldali gyermeke nagyobb az adott nódusnál."
+                            class="img-fluid rounded">
+                        <figcaption>AVL fa vizualizáció</figcaption>
+                    </figure>
                 </div>
+            </article>
 
-            </div>
-        </div>
+        </section>
+
     </main>
 
     <footer>

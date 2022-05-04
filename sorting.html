@@ -11,22 +11,36 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/logo.jpg" type="image/x-icon">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css" title="normal">
 
 
     <title>Programozz - Rendezőalgoritmusok</title>
-    <nav id="menu">
-        <ul>
-            <li><a href="index.html" title="Kezdőlap: kezdő információ">Kezdőlap</a></li>
-            <li><a class="active" href="sorting.html"
-                    title="Rendezőalgoritmusok bemutatása, szemléltzetése és összehasonlítása">Rendezőalgoritmusok</a>
-            </li>
-            <li><a href="data_structures.html" title="Absztrakt adatstruktúrák bemutása és szemléltetése">Absztrakt
-                    adatstruktúrák</a></li>
-            <li><a href="form.html" title="Visszajelzés küldése. Javaslat vagy hiba bejelentés."></span>Visszajelzés</a>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark" id="menu">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img class="d-inline-block" src="images/logo.png" width="64"
+                    height="64" alt="logo">Programozz</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html"
+                            title="Kezdőlap: kezdő információ">Kezdőlap</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="sorting.html"
+                            title="Rendezőalgoritmusok bemutatása, szemléltzetése és összehasonlítása">Rendezőalgoritmusok</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="data_structures.html"
+                            title="Absztrakt adatstruktúrák bemutása és szemléltetése">Absztrakt
+                            adatstruktúrák</a></li>
+                    <li class="nav-item"><a class="nav-link" href="form.html"
+                            title="Visszajelzés küldése. Javaslat vagy hiba bejelentés."></span>Visszajelzés</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
     </nav>
 </head>
 
@@ -38,94 +52,148 @@
 
     <main>
 
-        <section id="algorithms"></section>
+        <section class="container">
+            <article class="row">
 
-        <article>
-            <h2>Kiválasztó rendezés</h2>
-            <p>Kiválasztjuk az elejéről kezdve a sorozat egyes elemeit, majd egyenként összehasonlítjuk a sorozat még
-                nem
-                rendezett többi elemével. Ha a sorrend nem megfelelő, akkor cserélünk. </p>
-            <p>Az algoritmus k-adik lépése előtt az első k-1 elem már rendezett, tehát ezek már nem vesznek részt a
-                vizsgálatokban. A kiválasztó rendezés lépésszáma legrosszabb és átlagos esetben is négyzetes. </p>
-            <img src="images/selection_sort.jpg" alt="alternatetext">
-        </article>
+                <div class="col-sm-12 col-md-6">
+                    <h2>Kiválasztó rendezés</h2>
+                    <p>Kiválasztjuk az elejéről kezdve a sorozat egyes elemeit, majd egyenként összehasonlítjuk a
+                        sorozat még
+                        nem
+                        rendezett többi elemével. Ha a sorrend nem megfelelő, akkor cserélünk. </p>
+                    <p>Az algoritmus k-adik lépése előtt az első k-1 elem már rendezett, tehát ezek már nem vesznek
+                        részt a
+                        vizsgálatokban. A kiválasztó rendezés lépésszáma legrosszabb és átlagos esetben is négyzetes.
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-6 d-flex align-items-center">
+                    <figure>
+                        <img src="images/selection_sort.jpg"
+                            alt="Kiválasztó rendezés menete. Lépésről lépésre megmutatja a tömb állapotát."
+                            class="img-fluid rounded">
+                        <figcaption>Kiválasztó rendezés menete</figcaption>
+                    </figure>
+                </div>
+            </article>
 
-        <article>
-            <h2>Beillesztő rendezés</h2>
-            <p>Az algoritmus k-adik lépése előtt az első k-1 elem már rendezett; a lépés során a k-adik elemet beszúrjuk
-                az
-                első k-1 elem közé az őt nagyság szerint megillető helyre, és a nála nagyobbakat eggyel eltoljuk. </p>
-            <p>A beillesztő rendezés lépésszáma legrosszabb és átlagos esetben is négyzetes, így nagy tömbök esetén nem
-                hatékony. Nagyon kis tömbökre azonban ez a leggyorsabb algoritmus. </p>
-            <img src="images/insertion_sort.jpg" alt="alternatetext">
-        </article>
+            <article class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h2>Beillesztő rendezés</h2>
+                    <p>Az algoritmus k-adik lépése előtt az első k-1 elem már rendezett; a lépés során a k-adik elemet
+                        beszúrjuk
+                        az
+                        első k-1 elem közé az őt nagyság szerint megillető helyre, és a nála nagyobbakat eggyel
+                        eltoljuk. </p>
+                    <p>A beillesztő rendezés lépésszáma legrosszabb és átlagos esetben is négyzetes, így nagy tömbök
+                        esetén nem
+                        hatékony. Nagyon kis tömbökre azonban ez a leggyorsabb algoritmus. </p>
+                </div>
+                <div class="col-sm-12 col-md-6 d-flex align-items-center">
+                    <figure>
+                        <img src="images/insertion_sort.jpg"
+                            alt="Beillesztő rendezés vizualizáció. Lépésről lépésre megmutatja a tömb állapotát."
+                            class="img-fluid rounded">
+                        <figcaption>Beillesztő rendezés menete</figcaption>
+                    </figure>
+                </div>
 
-        <article>
-            <h2>Összefésülő rendezés</h2>
-            <p>Az összefésülő rendezés alapötlete, hogy eleve rendezett elemsorozatok aránylag egyszerűen vonhatók össze
-                rendezett sorozattá. Az algoritmus lényege, hogy az elemeket két csoportba osztjuk, a csoportokat
-                rendezzük
-                (akár összefésülő rendezéssel), majd a kapott részeket összefésüljük. </p>
-            <p>Az összefésülés lényege, hogy a bemeneti sorozatok aktuális elemét nézve a kimeneti sorozatba mindig a
-                kisebb
-                kerül. Így egy összefésülés futásideje a kimeneti sorozat hosszával arányos. </p>
-            <img src="images/merge_sort.jpg" alt="alternatetext">
-        </article>
+            </article>
 
-        <article>
-            <h2>Gyorsrendezés</h2>
-            <p>A gyorsrendezés oszd meg és uralkodj elven működik: a rendezendő számok listáját két részre bontja, majd
-                ezeket a részeket rekurzívan, gyorsrendezéssel rendezi. A felbontáshoz kiválaszt egy támpontnak nevezett
-                elemet (más néven pivot, főelem vagy vezérelem), és particionálja a listát: a támpontnál kisebb elemeket
-                eléje, a nagyobbakat mögéje mozgatja. </p>
-            <img src="images/quick_sort.jpg" alt="alternatetext">
-        </article>
+            <article class="row">
 
-        <section id="comparison"></section>
-        <h2>Összehasonlítás</h2>
+                <div class="col-sm-12 col-md-6">
+                    <h2>Összefésülő rendezés</h2>
+                    <p>Az összefésülő rendezés alapötlete, hogy eleve rendezett elemsorozatok aránylag egyszerűen
+                        vonhatók össze
+                        rendezett sorozattá. Az algoritmus lényege, hogy az elemeket két csoportba osztjuk, a
+                        csoportokat
+                        rendezzük
+                        (akár összefésülő rendezéssel), majd a kapott részeket összefésüljük. </p>
+                    <p>Az összefésülés lényege, hogy a bemeneti sorozatok aktuális elemét nézve a kimeneti sorozatba
+                        mindig a
+                        kisebb
+                        kerül. Így egy összefésülés futásideje a kimeneti sorozat hosszával arányos. </p>
+                </div>
+                <div class="col-sm-12 col-md-6 d-flex align-items-center">
+                    <figure>
+                        <img src="images/merge_sort.jpg"
+                            alt="Összefésülő rendezés vizualizáció. Lépésről lépésre megmutatja a rekurzív folyamatot."
+                            class="img-fluid rounded">
+                        <figcaption>Összefésülő rendezés menete</figcaption>
+                    </figure>
+                </div>
 
-        <table>
+            </article>
+            <article class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h2>Gyorsrendezés</h2>
+                    <p>A gyorsrendezés oszd meg és uralkodj elven működik: a rendezendő számok listáját két részre
+                        bontja, majd
+                        ezeket a részeket rekurzívan, gyorsrendezéssel rendezi. A felbontáshoz kiválaszt egy támpontnak
+                        nevezett
+                        elemet (más néven pivot, főelem vagy vezérelem), és particionálja a listát: a támpontnál kisebb
+                        elemeket
+                        eléje, a nagyobbakat mögéje mozgatja. </p>
+                </div>
+                <div class="col-sm-12 col-md-6 d-flex align-items-center">
+                    <figure>
+                        <img src="images/quick_sort.jpg"
+                            alt="Összefésülő rendezés vizualizáció. Lépésről lépésre megmutatja a rekurzív folyamatot."
+                            class="img-fluid rounded">
+                        <figcaption>Gyorsrendezés menete</figcaption>
+                    </figure>
+                </div>
+            </article>
 
-            <tr>
-                <th> </th>
-                <th>Kiválasztó rendezés</th>
-                <th>Beillesztő rendezés</th>
-                <th>Összefésülő rendezés</th>
-                <th>Gyorsrendezés</th>
-            </tr>
-            <tr>
-                <th>Műveletigény</th>
-                <td>&Theta;(n&sup2;)</td>
-                <td>&Theta;(n&sup2;)</td>
-                <td>&Theta;(n&middot;log n)</td>
-                <td>&Theta;(n&middot;log n)</td>
-            </tr>
-            <tr>
-                <th>Memóriaigény</th>
-                <td>&Theta;(1)</td>
-                <td>&Theta;(1)</td>
-                <td>&Theta;(n)</td>
-                <td>&Theta;(log n)</td>
-            </tr>
-            <tr>
-                <th>Stabilitás</th>
-                <td>Instabil</td>
-                <td>Stabil</td>
-                <td>Stabil</td>
-                <td>Instabil</td>
-            </tr>
-            <caption>
-                <details>
-                    <summary>Összehasonlító táblázat</summary>
-                    <p>A bemutatott algoritmusok összehasonlítása műveletigény, memóriaigény és stabilitás szerint.</p>
-                </details>
-            </caption>
-        </table>
+        </section>
 
-        <video width="640" height="480" controls>
-            <source src="videos/sorting.mp4" type="video/mp4">
-            A böngésző nem támogatja a video tag-et!
-        </video>
+        <section id="comparison">
+            <h2>Összehasonlítás</h2>
+
+            <table>
+
+                <tr>
+                    <th> </th>
+                    <th>Kiválasztó rendezés</th>
+                    <th>Beillesztő rendezés</th>
+                    <th>Összefésülő rendezés</th>
+                    <th>Gyorsrendezés</th>
+                </tr>
+                <tr>
+                    <th>Műveletigény</th>
+                    <td>&Theta;(n&sup2;)</td>
+                    <td>&Theta;(n&sup2;)</td>
+                    <td>&Theta;(n&middot;log n)</td>
+                    <td>&Theta;(n&middot;log n)</td>
+                </tr>
+                <tr>
+                    <th>Memóriaigény</th>
+                    <td>&Theta;(1)</td>
+                    <td>&Theta;(1)</td>
+                    <td>&Theta;(n)</td>
+                    <td>&Theta;(log n)</td>
+                </tr>
+                <tr>
+                    <th>Stabilitás</th>
+                    <td>Instabil</td>
+                    <td>Stabil</td>
+                    <td>Stabil</td>
+                    <td>Instabil</td>
+                </tr>
+                <caption>
+                    <details>
+                        <summary>Összehasonlító táblázat</summary>
+                        <p>A bemutatott algoritmusok összehasonlítása műveletigény, memóriaigény és stabilitás szerint.
+                        </p>
+                    </details>
+                </caption>
+            </table>
+
+            <video width="640" height="480" controls>
+                <source src="videos/sorting.mp4" type="video/mp4">
+                A böngésző nem támogatja a video tag-et!
+            </video>
+        </section>
     </main>
 
     <footer>
