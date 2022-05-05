@@ -69,14 +69,14 @@
         <form class="container" action="mailto:censored@ggmail.com" method="post" enctype="text/plain">
             <div class="mb-3">
                 <label for="input-email" class="form-label">Email cím</label>
-                <input type="email" class="form-control" id="input-email" aria-describedby="email-priv"
-                    placeholder="nev@pelda.hu">
+                <input type="email" class="form-control" id="input-email" name="email_address"
+                    aria-describedby="email-priv" placeholder="nev@pelda.hu">
                 <div id="email-priv" class="form-text">Az email címét nem osztjuk meg senkivel</div>
             </div>
             <div class="row">
                 <div class="col-xs-3 col-md-2 offset-xs-3 offset-md-4">
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="radio-recommend">
+                        <input class="form-check-input" type="radio" name="recommendation" id="radio-recommend">
                         <label class="form-check-label" for="radio-recommend">
                             Javaslat
                         </label>
@@ -84,8 +84,7 @@
                 </div>
                 <div class="col-xs-3 col-md-2">
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="radio-report"
-                            checked>
+                        <input class="form-check-input" type="radio" name="report" id="radio-report" checked>
                         <label class="form-check-label" for="radio-report">
                             Hibaészlelés
                         </label>
@@ -93,14 +92,15 @@
                 </div>
             </div>
             <div class="mb-3">
-                <label for="input-subj" class="form-label">Visszajelzés tárgya</label>
-                <input type="text" class="form-control" id="input-subj" placeholder="Tárgy">
+                <label for="input-subject" class="form-label">Visszajelzés tárgya</label>
+                <input type="text" class="form-control" id="input-subject" name="subject" placeholder="Tárgy">
                 <label id="feedback_textarea_label" for="feedback-body" class="form-label">Visszajelzés
                     szövege</label>
-                <textarea class="form-control" id="feedback-body" rows="3" placeholder="Írjon ide..."></textarea>
+                <textarea class="form-control" name="feedback" id="feedback-body" rows="3"
+                    placeholder="Írjon ide..."></textarea>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="ask-follow-up">
+                <input class="form-check-input" type="checkbox" name="follow_up" value="on" id="ask-follow-up">
                 <label class="form-check-label" for="ask-follow-up">
                     Visszajelzést kérek emailben
                 </label>
