@@ -145,3 +145,18 @@ span#larger_letters_icon {
 span#normal_letters_icon {
     background-position: -330px 0px;
 }
+
+.out_of_view a {
+    position: absolute;
+    left: -9999px;
+}
+
+.out_of_view a:focus {
+    position: static;
+    background: white;
+    color:crimson;
+    font-size: 1.2em;
+    border-radius: 5px;
+    padding: 5px;
+    
+}
