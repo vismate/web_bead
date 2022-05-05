@@ -71,7 +71,7 @@ caption {
     box-shadow: 4px 4px 4px rgb(30, 30, 32);
     border-color: #2899f5;
     border-style: solid;
-    border-width: 1px;
+    border-width: 2px;
 }
 
 .navbar-brand,
@@ -120,9 +120,28 @@ th {
 
 nav#styleswitcher {
     text-align: right;
-    font-size: 1.6em;
+}
+
+nav#styleswitcher a {
+    text-decoration: none;
+    color: #2899f5;
+    font-size: 1.2em;
 }
 
 a#normal_stylesheet {
     display: none;
+}
+
+span#normal_letters_icon,
+span#larger_letters_icon {
+    background-image: url("../images/iconset.png");
+    width: 60px;
+    height: 60px;
+    margin-right: 5px;
+    background-position: -240px 0px;
+    float: right;
+}
+
+span#normal_letters_icon {
+    background-position: -330px 0px;
 }

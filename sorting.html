@@ -13,6 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
     <link rel="icon" href="images/logo.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css" title="normal">
+    <link rel="alternate stylesheet" type="text/css" href="css/larger_letters.css" title="larger_letters">
+
+    <script type="text/javascript" src="js/setStylesheet.js"></script>
 
 
     <title>Programozz - Rendezőalgoritmusok</title>
@@ -47,6 +50,13 @@
 <body>
 
     <header>
+        <nav id="styleswitcher">
+            <a id="larger_letters" href="#" onclick="setStylesheet('larger_letters'); return false;"><span
+                    id="larger_letters_icon"></span>Nagybetűs</a>
+            <a id="normal_stylesheet" href="#" onclick="setStylesheet('normal'); return false;"><span
+                    id="normal_letters_icon"></span>Normál</a>
+        </nav>
+
         <h1>Rendezőalgoritmusok</h1>
     </header>
 
@@ -150,8 +160,8 @@
         <section class="container">
             <div class="row">
                 <h2>Összehasonlítás</h2>
-                <div class="col-xs-12"  id="overlflow-control">
-                    
+                <div class="col-xs-12" id="overlflow-control">
+
 
                     <table>
 
