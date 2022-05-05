@@ -5,6 +5,7 @@ body {
     background-color: rgb(75, 75, 77);
     margin-bottom: 1em;
     color: white;
+    font-size: 1.2em;
 }
 
 h1,
@@ -85,8 +86,12 @@ figcaption {
     font-style: italic;
 }
 
-caption {
+caption details summary {
     color: #2899f5;
+}
+
+caption p {
+    color: white;
 }
 
 .navbar {
@@ -103,7 +108,8 @@ caption {
 .navbar-brand,
 .nav-link {
     text-decoration: none !important;
-    text-shadow: 3px 3px 3px rgb(35, 35, 37);;
+    text-shadow: 3px 3px 3px rgb(35, 35, 37);
+    
 }
 
 .navbar-brand {
@@ -207,4 +213,20 @@ aside {
 aside q {
     font-style: italic;
     color: lightgray;
+}
+
+
+.btn {
+    margin: 1.5em;
+    margin-left: 0;
+    min-width: 120px;
+    
+}
+
+#feedback_textarea_label{
+    margin-top: 3em;
+}
+
+textarea {
+    margin-bottom: 3em;
 }

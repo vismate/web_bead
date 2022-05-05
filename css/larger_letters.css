@@ -1,7 +1,11 @@
 @import url('stylesheet.css');
 
 body {
-    font-size: 1.6em;
+    font-size: 1.8em;
+}
+
+.btn {
+    font-size: 1em;
 }
 
 a#larger_letters {
@@ -10,4 +14,15 @@ a#larger_letters {
 
 a#normal_stylesheet {
     display: block;
+}
+
+.nav-link,
+.nav-brand,
+.nav-link.active {
+    font-size: 0.8em !important;
+    /* biztosítja a navbar integritását*/
+}
+
+.form-check-label {
+    margin-right: 1em;
 }
