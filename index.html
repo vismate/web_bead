@@ -56,8 +56,10 @@
 
     <header>
         <nav id="styleswitcher">
-            <a id="larger_letters" href="#" onclick="setStylesheet('larger_letters'); return false;"><span id="larger_letters_icon"></span>Nagybetűs</a>
-            <a id="normal_stylesheet" href="#" onclick="setStylesheet('normal'); return false;"><span id="normal_letters_icon"></span>Normál</a>
+            <a id="larger_letters" href="#" onclick="setStylesheet('larger_letters'); return false;"><span
+                    id="larger_letters_icon"></span>Nagybetűs</a>
+            <a id="normal_stylesheet" href="#" onclick="setStylesheet('normal'); return false;"><span
+                    id="normal_letters_icon"></span>Normál</a>
         </nav>
 
         <h1> Kezdőlap </h1>
@@ -70,7 +72,11 @@
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-3">
                     <p> A <strong>Programozz</strong> weboldala segít információt és magyarázatot találni különféle
-                        algoritmusokhoz és adatszerkezetekhez, hogy te is hatékonyan kódolhass.</p>
+                        <a target="_blank" href="https://hu.wikipedia.org/wiki/Algoritmus">algoritmusokhoz</a> és
+                        <a target="_blank" href="https://hu.wikipedia.org/wiki/Adatszerkezet">adatszerkezetekhez</a>,
+                        hogy
+                        te is hatékonyan kódolhass.
+                    </p>
 
                 </div>
 
@@ -86,6 +92,8 @@
 
                 <div class="col-sm-12 col-md-12 col-lg-6">
                     <img src="images/cover.jpg" alt="Kód egy kijelzőn" class="img-fluid rounded">
+                    <aside><q>Ne feledd, hogy ebben a programkódban hibák lehetnek! Csak bebizonyítottam, hogy
+                            nincsenek, de nem próbáltam ki.</q> <br>- Donald Knuth</aside>
                 </div>
 
 
@@ -96,12 +104,16 @@
 
     </main>
 
-    <footer></footer>
+    <footer>
+        <a href="#" id="back_to_top">Vissza a tetejére</a><br>
+        Visnyár Máté @ <time datetime="2022">2022</time>
+    </footer>
 
     <!-- Bootsrap js hozzáadása CDN-ről -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>

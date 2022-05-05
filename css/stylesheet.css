@@ -2,7 +2,7 @@
 
 body {
     font-family: Varela, Arial, Helvetica, sans-serif;
-    background-color: rgb(45, 45, 47);
+    background-color: rgb(75, 75, 77);
     margin-bottom: 1em;
     color: white;
 }
@@ -26,6 +26,30 @@ h2 {
 p {
     text-align: justify;
 }
+
+a:link {
+    text-decoration: underline;
+    color: #2899f5;
+}
+
+a:hover {
+    color: #71d7ff;
+    text-shadow: #2899f5;
+}
+
+a:visited {
+    color: slategray;
+}
+
+a#back_to_top:visited {
+    color: #2899f5;
+}
+
+a#back_to_top:hover {
+    font-size: 1.2em;
+    color: #71d7ff;
+}
+
 
 header,
 footer,
@@ -52,6 +76,8 @@ header {
 footer {
     border-radius: 0 0 8px 8px;
     border-top: 0;
+    text-align: center;
+    color: gray;
 }
 
 figcaption {
@@ -76,13 +102,22 @@ caption {
 
 .navbar-brand,
 .nav-link {
-    color: white;
+    text-decoration: none !important;
+    text-shadow: 3px 3px 3px rgb(35, 35, 37);;
+}
+
+.navbar-brand {
+    color: white !important;
+}
+
+.nav-link {
+    color: lightgray !important;
 }
 
 .nav-link.active {
     color: #2899f5 !important;
     font-weight: 900 !important;
-    font-size: 1.2em;
+    font-size: 1.2em !important;
 }
 
 video {
@@ -154,7 +189,7 @@ span#normal_letters_icon {
 .out_of_view a:focus {
     position: static;
     background: white;
-    color:crimson;
+    color: crimson;
     font-size: 1.2em;
     border-radius: 5px;
     padding: 5px;
@@ -162,4 +197,14 @@ span#normal_letters_icon {
 
 figure a img:hover {
     box-shadow: 0 0 2px 3px #2899f5;
-  }
+}
+
+aside {
+    padding: 1em;
+    text-align: center;
+}
+
+aside q {
+    font-style: italic;
+    color: lightgray;
+}
