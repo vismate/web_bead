@@ -15,39 +15,10 @@
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css" title="normal">
     <link rel="alternate stylesheet" type="text/css" href="css/larger_letters.css" title="larger_letters">
 
-    <script type="text/javascript" src="js/setStylesheet.js"></script>
-
-    <nav class="out_of_view">
-        <a href="#content">Ugrás a tartalomra</a>
-    </nav>
+    <script src="js/setStylesheet.js"></script>
 
     <title>Programozz - Visszajelzés</title>
-    <nav class="navbar navbar-expand-lg navbar-dark" id="menu">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img class="d-inline-block" src="images/logo.png" width="64"
-                    height="64">Programozz</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="index.html"
-                            title="Kezdőlap: kezdő információ">Kezdőlap</a></li>
-                    <li class="nav-item"><a class="nav-link" href="sorting.html"
-                            title="Rendezőalgoritmusok bemutatása, szemléltzetése és összehasonlítása">Rendezőalgoritmusok</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="data_structures.html"
-                            title="Absztrakt adatstruktúrák bemutása és szemléltetése">Absztrakt
-                            adatstruktúrák</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="#" aria-current="page"
-                            title="Visszajelzés küldése. Javaslat vagy hiba bejelentés."></span>Visszajelzés</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
 
-    </nav>
 </head>
 
 
@@ -55,17 +26,48 @@
 <body>
 
     <header>
+
+        <nav class="out_of_view">
+            <a href="#content">Ugrás a tartalomra</a>
+        </nav>
+
+
+        <nav class="navbar navbar-expand-lg navbar-dark" id="menu">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img class="d-inline-block" alt="" src="images/logo.png" width="64"
+                        height="64">Programozz</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html"
+                                title="Kezdőlap: kezdő információ">Kezdőlap</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sorting.html"
+                                title="Rendezőalgoritmusok bemutatása, szemléltzetése és összehasonlítása">Rendezőalgoritmusok</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="data_structures.html"
+                                title="Absztrakt adatstruktúrák bemutása és szemléltetése">Absztrakt
+                                adatstruktúrák</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#" aria-current="page"
+                                title="Visszajelzés küldése. Javaslat vagy hiba bejelentés.">Visszajelzés</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+
         <nav id="styleswitcher">
             <a id="larger_letters" href="#" onclick="setStylesheet('larger_letters'); return false;"><span
                     id="larger_letters_icon"></span>Nagybetűs</a>
             <a id="normal_stylesheet" href="#" onclick="setStylesheet('normal'); return false;"><span
                     id="normal_letters_icon"></span>Normál</a>
         </nav>
-
-        <h1>Visszajelzés küldése</h1>
     </header>
     <main id="content">
-
+        <h1>Visszajelzés küldése</h1>
         <form class="container" action="mailto:censored@ggmail.com" method="post" enctype="text/plain">
             <div class="mb-3">
                 <label for="input-email" class="form-label">Email cím</label>

@@ -35,7 +35,6 @@ a:link {
 
 a:hover {
     color: #71d7ff;
-    text-shadow: #2899f5;
 }
 
 a:visited {
@@ -51,8 +50,7 @@ a#back_to_top:hover {
     color: #71d7ff;
 }
 
-
-header,
+#styleswitcher,
 footer,
 main {
     background-color: rgb(30, 30, 32);
@@ -65,14 +63,15 @@ main {
 }
 
 main {
-    border-top: 0;
     border-bottom: 0;
+    border-top: 0;
 }
 
-header {
-    border-radius: 8px 8px 0 0;
+#styleswitcher {
     border-bottom: 0;
+    border-radius: 8px 8px 0 0;
 }
+
 
 footer {
     border-radius: 0 0 8px 8px;
@@ -146,7 +145,6 @@ td {
 
 table {
     width: 100%;
-    min-width: none;
 }
 
 th {

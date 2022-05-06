@@ -15,38 +15,7 @@
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css" title="normal">
     <link rel="alternate stylesheet" type="text/css" href="css/larger_letters.css" title="larger_letters">
 
-    <script type="text/javascript" src="js/setStylesheet.js"></script>
-
-    <nav class="out_of_view">
-        <a href="#content">Ugrás a tartalomra</a>
-    </nav>
-
-    <nav class="navbar navbar-expand-lg navbar-dark" id="menu">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img class="d-inline-block" src="images/logo.png" width="64"
-                    height="64">Programozz</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#"
-                            title="Kezdőlap: kezdő információ">Kezdőlap</a></li>
-                    <li class="nav-item"><a class="nav-link" href="sorting.html"
-                            title="Rendezőalgoritmusok bemutatása, szemléltzetése és összehasonlítása">Rendezőalgoritmusok</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="data_structures.html"
-                            title="Absztrakt adatstruktúrák bemutása és szemléltetése">Absztrakt
-                            adatstruktúrák</a></li>
-                    <li class="nav-item"><a class="nav-link" href="form.html"
-                            title="Visszajelzés küldése. Javaslat vagy hiba bejelentés."></span>Visszajelzés</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-    </nav>
+    <script src="js/setStylesheet.js"></script>
 
     <title>Programozz - Kezdőlap</title>
 
@@ -55,6 +24,36 @@
 <body>
 
     <header>
+        <nav class="out_of_view">
+            <a href="#content">Ugrás a tartalomra</a>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg navbar-dark" id="menu">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="d-inline-block" src="images/logo.png" alt="" width="64"
+                        height="64">Programozz</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#"
+                                title="Kezdőlap: kezdő információ">Kezdőlap</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sorting.html"
+                                title="Rendezőalgoritmusok bemutatása, szemléltzetése és összehasonlítása">Rendezőalgoritmusok</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="data_structures.html"
+                                title="Absztrakt adatstruktúrák bemutása és szemléltetése">Absztrakt
+                                adatstruktúrák</a></li>
+                        <li class="nav-item"><a class="nav-link" href="form.html"
+                                title="Visszajelzés küldése. Javaslat vagy hiba bejelentés.">Visszajelzés</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
         <nav id="styleswitcher">
             <a id="larger_letters" href="#" onclick="setStylesheet('larger_letters'); return false;"><span
                     id="larger_letters_icon"></span>Nagybetűs</a>
@@ -62,12 +61,12 @@
                     id="normal_letters_icon"></span>Normál</a>
         </nav>
 
-        <h1> Kezdőlap </h1>
     </header>
 
     <main id="content">
+        <h1> Kezdőlap </h1>
 
-        <article class="container">
+        <div class="container">
 
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-3">
@@ -91,7 +90,7 @@
                 </div>
 
                 <div class="col-sm-12 col-md-12 col-lg-6">
-                    <img src="images/cover.jpg" alt="Kód egy kijelzőn" class="img-fluid rounded">
+                    <img src="images/cover.jpg" alt="Kód egy kijelzőn, amit egy személy néz." class="img-fluid rounded">
                     <aside><q>Ne feledd, hogy ebben a programkódban hibák lehetnek! Csak bebizonyítottam, hogy
                             nincsenek, de nem próbáltam ki.</q> <br>- Donald Knuth</aside>
                 </div>
@@ -100,7 +99,7 @@
             </div>
 
 
-        </article>
+        </div>
 
     </main>
 

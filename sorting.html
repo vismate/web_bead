@@ -15,57 +15,56 @@
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css" title="normal">
     <link rel="alternate stylesheet" type="text/css" href="css/larger_letters.css" title="larger_letters">
 
-    <script type="text/javascript" src="js/setStylesheet.js"></script>
-
-    <nav class="out_of_view">
-        <a href="#content">Ugrás a tartalomra</a>
-    </nav>
-
+    <script src="js/setStylesheet.js"></script>
     <title>Programozz - Rendezőalgoritmusok</title>
-    <nav class="navbar navbar-expand-lg navbar-dark" id="menu">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img class="d-inline-block" src="images/logo.png" width="64"
-                    height="64">Programozz</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="index.html"
-                            title="Kezdőlap: kezdő információ">Kezdőlap</a></li>
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#"
-                            title="Rendezőalgoritmusok bemutatása, szemléltzetése és összehasonlítása">Rendezőalgoritmusok</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="data_structures.html"
-                            title="Absztrakt adatstruktúrák bemutása és szemléltetése">Absztrakt
-                            adatstruktúrák</a></li>
-                    <li class="nav-item"><a class="nav-link" href="form.html"
-                            title="Visszajelzés küldése. Javaslat vagy hiba bejelentés."></span>Visszajelzés</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
 
-    </nav>
 </head>
 
 <body>
 
     <header>
+        <nav class="out_of_view">
+            <a href="#content">Ugrás a tartalomra</a>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg navbar-dark" id="menu">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img class="d-inline-block" alt="" src="images/logo.png"
+                        width="64" height="64">Programozz</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html"
+                                title="Kezdőlap: kezdő információ">Kezdőlap</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#"
+                                title="Rendezőalgoritmusok bemutatása, szemléltzetése és összehasonlítása">Rendezőalgoritmusok</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="data_structures.html"
+                                title="Absztrakt adatstruktúrák bemutása és szemléltetése">Absztrakt
+                                adatstruktúrák</a></li>
+                        <li class="nav-item"><a class="nav-link" href="form.html"
+                                title="Visszajelzés küldése. Javaslat vagy hiba bejelentés.">Visszajelzés</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
         <nav id="styleswitcher">
             <a id="larger_letters" href="#" onclick="setStylesheet('larger_letters'); return false;"><span
                     id="larger_letters_icon"></span>Nagybetűs</a>
             <a id="normal_stylesheet" href="#" onclick="setStylesheet('normal'); return false;"><span
                     id="normal_letters_icon"></span>Normál</a>
         </nav>
-
-        <h1>Rendezőalgoritmusok</h1>
     </header>
 
     <main id="content">
+        <h1>Rendezőalgoritmusok</h1>
 
-        <section class="container">
+        <div class="container">
             <article class="row">
 
                 <div class="col-sm-12 col-md-6">
@@ -83,7 +82,7 @@
                     <figure>
                         <a target="_blank" href="images/selection_sort_large.jpg">
                             <img src="images/selection_sort.jpg"
-                                alt="Kiválasztó rendezés menete. Lépésről lépésre megmutatja a tömb állapotát."
+                                alt="Kiválasztó rendezés menete. 9 soron keresztül lépésről lépésre megmutatja a tömb állapotát. Egy sor egy lépést reprezentál. Zöld háttér jelöli a már rendezett elemeket, piros a jelenlegi minimális elemet a maradéktömbben."
                                 class="img-fluid rounded">
                         </a>
                         <figcaption>Kiválasztó rendezés menete</figcaption>
@@ -107,7 +106,7 @@
                     <figure>
                         <a target="_blank" href="images/insertion_sort_large.jpg">
                             <img src="images/insertion_sort.jpg"
-                                alt="Beillesztő rendezés vizualizáció. Lépésről lépésre megmutatja a tömb állapotát."
+                                alt="Beillesztő rendezés vizualizáció. 9 soron keresztül lépésről lépésre megmutatja a tömb állapotát. Egy sor egy lépést reprezentál. A zöld háttér jelöli a soron következő beszúrandó elemet. Piros nyíl a beszúrandó elem feldolgozás utáni pozícióját."
                                 class="img-fluid rounded">
                         </a>
                         <figcaption>Beillesztő rendezés menete</figcaption>
@@ -135,7 +134,7 @@
                     <figure>
                         <a target="_blank" href="images/merge_sort_large.jpg">
                             <img src="images/merge_sort.jpg"
-                                alt="Összefésülő rendezés vizualizáció. Lépésről lépésre megmutatja a rekurzív folyamatot."
+                                alt="Összefésülő rendezés vizualizáció. Lépésről lépésre megmutatja a rekurzív folyamatot. A legfelső sor a kezdeti tömböt ábrázolja, majd soronként feleződnek meg a résztömbök mindaddig, míg egy elemű részekre nem osztódtak. Ezt a folyamatot piros nyilak ilusztrálják. A kép alsó felében ezek a résztömböket összefésüljük. Ezt a folyamatot zöld nyilak jelzik."
                                 class="img-fluid rounded">
                         </a>
                         <figcaption>Összefésülő rendezés menete</figcaption>
@@ -159,15 +158,17 @@
                 <div class="col-sm-12 col-md-6 d-flex align-items-center">
                     <figure>
                         <a target="_blank" href="images/quick_sort_large.jpg">
-                            <img src="images/quick_sort.jpg" alt="Összefésülő rendezés vizualizáció. 
-                                Lépésről lépésre megmutatja a rekurzív folyamatot." class="img-fluid rounded">
+                            <img src="images/quick_sort.jpg"
+                                alt="Gyorsrendezés vizualizáció. 
+                                Lépésről lépésre megmutatja a rekurzív folyamatot. Soronként különböző színek jelölik az aktuális pivot elemet. Egyes elemek fölött megjelenő annotáció a mellette lévő elemmel való összehasonlítást jelöli."
+                                class="img-fluid rounded">
                         </a>
                         <figcaption>Gyorsrendezés menete</figcaption>
                     </figure>
                 </div>
             </article>
 
-        </section>
+        </div>
 
         <section class="container">
             <div class="row">
@@ -177,6 +178,14 @@
 
                     <table>
 
+                        <caption>
+                            <details>
+                                <summary>Összehasonlító táblázat</summary>
+                                <p>A bemutatott algoritmusok összehasonlítása műveletigény, memóriaigény és stabilitás
+                                    szerint.
+                                </p>
+                            </details>
+                        </caption>
                         <tr>
                             <th> </th>
                             <th>Kiválasztó rendezés</th>
@@ -205,14 +214,6 @@
                             <td>Stabil</td>
                             <td>Instabil</td>
                         </tr>
-                        <caption>
-                            <details>
-                                <summary>Összehasonlító táblázat</summary>
-                                <p>A bemutatott algoritmusok összehasonlítása műveletigény, memóriaigény és stabilitás
-                                    szerint.
-                                </p>
-                            </details>
-                        </caption>
                     </table>
                 </div>
             </div>

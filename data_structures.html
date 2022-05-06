@@ -15,44 +15,44 @@
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css" title="normal">
     <link rel="alternate stylesheet" type="text/css" href="css/larger_letters.css" title="larger_letters">
 
-    <script type="text/javascript" src="js/setStylesheet.js"></script>
-
-    <nav class="out_of_view">
-        <a href="#content">Ugrás a tartalomra</a>
-    </nav>
-
+    <script src="js/setStylesheet.js"></script>
     <title>Programozz - Absztrakt adatstruktúrák</title>
-    <nav class="navbar navbar-expand-lg navbar-dark" id="menu">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img class="d-inline-block" src="images/logo.png" width="64"
-                    height="64">Programozz</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="index.html"
-                            title="Kezdőlap: kezdő információ">Kezdőlap</a></li>
-                    <li class="nav-item"><a class="nav-link" href="sorting.html"
-                            title="Rendezőalgoritmusok bemutatása, szemléltzetése és összehasonlítása">Rendezőalgoritmusok</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#"
-                            title="Absztrakt adatstruktúrák bemutása és szemléltetése">Absztrakt
-                            adatstruktúrák</a></li>
-                    <li class="nav-item"><a class="nav-link" href="form.html"
-                            title="Visszajelzés küldése. Javaslat vagy hiba bejelentés."></span>Visszajelzés</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-    </nav>
 </head>
 
 <body>
 
     <header>
+        <nav class="out_of_view">
+            <a href="#content">Ugrás a tartalomra</a>
+        </nav>
+
+
+        <nav class="navbar navbar-expand-lg navbar-dark" id="menu">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img class="d-inline-block" alt="" src="images/logo.png"
+                        width="64" height="64">Programozz</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html"
+                                title="Kezdőlap: kezdő információ">Kezdőlap</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sorting.html"
+                                title="Rendezőalgoritmusok bemutatása, szemléltzetése és összehasonlítása">Rendezőalgoritmusok</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#"
+                                title="Absztrakt adatstruktúrák bemutása és szemléltetése">Absztrakt
+                                adatstruktúrák</a></li>
+                        <li class="nav-item"><a class="nav-link" href="form.html"
+                                title="Visszajelzés küldése. Javaslat vagy hiba bejelentés.">Visszajelzés</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
         <nav id="styleswitcher">
             <a id="larger_letters" href="#" onclick="setStylesheet('larger_letters'); return false;"><span
                     id="larger_letters_icon"></span>Nagybetűs</a>
@@ -60,11 +60,11 @@
                     id="normal_letters_icon"></span>Normál</a>
         </nav>
 
-        <h1>Absztrakt adatstruktúrák</h1>
     </header>
 
     <main id="content">
-        <section class="container">
+        <h1>Absztrakt adatstruktúrák</h1>
+        <div class="container">
             <article class="row">
 
                 <div class="col-sm-12 col-md-6">
@@ -90,7 +90,7 @@
                     <figure>
                         <a target="_blank" href="images/stack_large.jpg">
                             <img src="images/stack.jpg"
-                                alt="Verem vizualizáció. Egy tömb részlegesen megtöltve értékekkel és egy mutató, amely a verem tetejére mutat."
+                                alt="Verem vizualizáció. Egy tömb részlegesen megtöltve értékekkel és egy mutató, amely a verem tetejére mutat. A konténer slotjai számozva vannak nullától négyig."
                                 class="img-fluid rounded">
                         </a>
                         <figcaption>Verem vizualizáció</figcaption>
@@ -119,7 +119,7 @@
                     <figure>
                         <a target="_blank" href="images/queue_large.jpg">
                             <img src="images/queue.jpg"
-                                alt="Sor vizualizáció. Egy tömb részlegesen megtöltve értékekkel és két mutató (front, rear), amelyek a verem elejére illetve hátuljára mutatnak."
+                                alt="Sor vizualizáció. Egy tömb részlegesen megtöltve értékekkel és két mutató (front, rear), amelyek a verem elejére illetve hátuljára mutatnak. A konténer slotjai számozva vannak nullától ötig."
                                 class="img-fluid rounded">
                         </a>
                         <figcaption>Sor vizualizáció</figcaption>
@@ -183,7 +183,7 @@
                     <figure>
                         <a target="_blank" href="images/avl_tree_large.jpg">
                             <img src="images/avl_tree.jpg"
-                                alt="AVL fa vizualizáció. Egy bináris fa struktúra, ahol minden nódus bal gyermeke kisebb, jobb oldali gyermeke nagyobb az adott nódusnál."
+                                alt="AVL fa vizualizáció. Egy bináris fa struktúra, ahol minden nódus bal gyermeke kisebb, jobb oldali gyermeke nagyobb az adott nódusnál. A nódusok körrel, és beírt értékkel vannak jelölve."
                                 class="img-fluid rounded">
                         </a>
                         <figcaption>AVL fa vizualizáció</figcaption>
@@ -191,7 +191,7 @@
                 </div>
             </article>
 
-        </section>
+        </div>
 
     </main>
 
