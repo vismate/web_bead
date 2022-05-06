@@ -108,7 +108,7 @@ caption p {
 .nav-link {
     text-decoration: none !important;
     text-shadow: 3px 3px 3px rgb(35, 35, 37);
-    
+
 }
 
 .navbar-brand {
@@ -149,7 +149,7 @@ table {
 
 th {
     font-weight: 900;
-    font-size: large;
+    font-size: 110%;
 }
 
 #overlflow-control {
@@ -218,10 +218,10 @@ aside q {
     margin: 1.5em;
     margin-left: 0;
     min-width: 120px;
-    
+
 }
 
-#feedback_textarea_label{
+#feedback_textarea_label {
     margin-top: 3em;
 }
 

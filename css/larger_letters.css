@@ -1,11 +1,11 @@
 @import url('stylesheet.css');
 
 body {
-    font-size: 1.8em;
+    font-size: 200%;
 }
 
 .btn {
-    font-size: 1em;
+    font-size: 120%;
 }
 
 a#larger_letters {
@@ -19,7 +19,7 @@ a#normal_stylesheet {
 .nav-link,
 .nav-brand,
 .nav-link.active {
-    font-size: 0.8em !important;
+    font-size: 75% !important;
     /* biztosítja a navbar integritását*/
 }
 
